@@ -1,0 +1,24 @@
+.step.slide#deployment[data-x=x_succ data-y=0]
+  q
+    = image_tag 'deployment.png'
+    h1 Deployment
+
+.step.slide.shell#you_must_test[data-x=x_succ data-y=0]
+  q[style="text-align:center"]
+    h1 YOU MUST TEST!
+    = image_tag "bitch-please.jpg"
+
+.step.slide.shell#ci[data-x=x_succ data-y=0]
+  q[style="text-align:center"]
+    = image_tag "rspec.png"
+    h1 Continuous Integration
+
+.step.slide#ci_options[data-x=x_succ data-y=0]
+  q
+    ul
+      li
+        = link_to 'travis-ci.org','http://travis-ci.org/'
+      li
+        = link_to 'jenkins-ci.org', 'http://jenkins-ci.org/'
+      li
+        = link_to 'github.com/c42/goldberg', 'https://github.com/c42/goldberg'

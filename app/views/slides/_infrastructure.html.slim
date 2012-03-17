@@ -1,0 +1,35 @@
+.step.slide#machines[data-x=x_succ data-y=0]
+  q
+    = image_tag 'infrastructure.png'
+    h1 Infraestrutura
+    p
+      small[style="font-size: 0.5em"] datacenters, servidores dedicados, máquinas virtuais e cloud computing
+
+.step.slide#apache[data-x=x_succ data-y=0]
+  q
+    = image_tag 'apache.png'
+    h1 Apache
+    
+.step.slide#nginx[data-x=x_succ data-y=0]
+  q[style="text-align:center"]
+    = image_tag 'nginx.png'
+
+.step.slide#webserver_benchmark[data-x=x_succ data-y=0]
+  q
+    = image_tag 'benchmark.png'
+    h1 Benchmark time!
+    small
+      | ab -n 10000 -c 10 222.222.222.222
+      br
+      | ab -n 10000 -c 100 222.222.222.222
+
+.step.slide#ruby_servers[data-x=x_succ data-y=0]
+  q
+    h1 Ruby Servers
+    small
+      ul
+        li Passenger
+        li Thin
+        li Unicorn
+        li Mongrel
+      a[href="https://www.ruby-toolbox.com/categories/web_servers"] ruby-toolbox.com/categories/web_servers
