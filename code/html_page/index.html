@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--
+      ___           ___           ___           ___           ___     
+     /\  \         /\  \         /\  \         /\  \         /\  \    
+    /::\  \       /::\  \       /::\  \        \:\  \       /::\  \   
+   /:/\:\  \     /:/\:\  \     /:/\:\  \        \:\  \     /:/\:\  \  
+  _\:\~\:\  \   /:/  \:\  \   /::\~\:\  \       /::\  \   /::\~\:\  \ 
+ /\ \:\ \:\__\ /:/__/ \:\__\ /:/\:\ \:\__\     /:/\:\__\ /:/\:\ \:\__\
+ \:\ \:\ \/__/ \:\  \ /:/  / \/__\:\ \/__/    /:/  \/__/ \/__\:\/:/  /
+  \:\ \:\__\    \:\  /:/  /       \:\__\     /:/  /           \::/  / 
+   \:\/:/  /     \:\/:/  /         \/__/     \/__/            /:/  /  
+    \::/  /       \::/  /                                    /:/  /   
+     \/__/         \/__/                                     \/__/    
+
+Olá. Seja bem vindo ao site da Softa.
+Por favor, não perca seu tempo copiando nada daqui. O código completo está em http://github.com/softa. Happy hacking.
+
+-->
+
+
+<html lang='pt-br'>
+<head>
+<meta charset='UTF-8'>
+<!--[if IE]>
+<meta content='IE=edge;chrome=1' http-equiv='X-UA-Compatible'>
+<![endif]-->
+<title>Aplicações web 2.0 em Ruby on Rails e PostgreSQL · Softa</title>
+<meta content='index, follow' name='robots'>
+<meta content='Aplicações web 2.0. O melhor do open source: Ruby on Rails e PostgreSQL. Utilizamos as melhores tecnologias aliadas aos métodos certos para desenvolver seus projetos no menor tempo e com a maior qualidade.' name='description'>
+<meta content='Softa' name='author'>
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:700,900' rel='stylesheet' type='text/css'>
+<link href='http://blog.softa.com.br/rss.xml' rel='alternate' title='RSS' type='application/rss+xml'>
+<meta content='web 2.0, web2, ruby on rails, ruby, rails, postgres, postgresql, métodos ágeis, agile programming, extreme programming, xp, ajax, javascript, aplicações web 2.0, sistemas web, desenvolvimento, diogo biazus, daniel weinmann, juan maiz, pedro axelrud, felipe cabral, design, softa, programação, arquitetura de informação, usabilidade, web2.0, interface de usuário, experiência de uso, ui, ux' name='keywords'>
+<link href="screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="shadowbox.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="jquery.juitter.js" type="text/javascript"></script>
+<script src="system.js" type="text/javascript"></script>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<script src="scrollTo.js" type="text/javascript"></script>
+<script src="shadowbox.js" type="text/javascript"></script>
+<script src="jquery.lazyload.mini.js" type="text/javascript"></script>
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="TjIIybjOFvp5IJBRqpsvJvgyKjiunp+LQIWAdqxmgXQ="/>
+
+
+<script>
+  //<![CDATA[
+    Shadowbox.init({ overlayOpacity: 0.8, animate: false });
+  //]]>
+</script>
+<link href='apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
+<link href='favicon.ico' rel='shortcut icon'>
+</head>
+<body>
+<div id='top'></div>
+<div id='back_to_top'><a href="#top"><img alt="To_top" height="48" src="to_top.png" width="48" /></a></div>
+<header><div class='top_bar'></div>
+<div class='wrapper'>
+<nav>
+<a href="#softa_catarse">Catarse.me</a><span>·</span>
+<a href="#softa_mailee">Mailee.me</a><span>·</span>
+<a href="#softa_method">Metodologia</a><span>·</span>
+<a href="#softa_labs">Softa Labs</a><span>·</span>
+<a href="#softa_staff">Quem somos</a><span>·</span>
+<a href="#social">Twitter, Blog &amp; Agenda</a><span>·</span>
+<a href="#contact_us">Contato</a>
+<div class='right'><a href="/pt" title="Português"><img alt="Br" height="11" src="br.png" width="16" /></a> <a href="/es" title="Español"><img alt="Es" height="11" src="es.png" width="16" /></a> <a href="/en" title="English"><img alt="Us" height="11" src="us.png" width="16" /></a></div>
+</nav>
+<div class='clear'></div>
+</div>
+</header>
+<div id='content'><div id='banner'>
+<div class='wrapper'>
+<div class='banner'>
+<p id='titulo'>
+A Softa agora é Engage
+</p>
+<div class='button'>
+<a href='http://engage.is'>
+Visite o Site
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div id='softa_description'>
+<div class='wrapper'>
+<section>
+<div id='softa'>
+<h1><img alt="Softa" src="softa.png" /></h1>
+<div class='call_to_action'>
+<a href="#contact_us" class="site_call_to_action" target="_self">Envie seu projeto</a>
+</div>
+</div>
+<h2>Desenvolvemos aplicações <em class='web_two'>web 2.0</em> usando <em class='ruby_on_rails'>Ruby on Rails</em> e <em class='postgresql'>PostgreSQL</em>, aliando o melhor do <em class='open_source'>Open Source</em> aos <em class='methods'>métodos certos</em> para realizar seus projetos no <em class='methods'>menor tempo</em> e com a <em class='methods'>maior qualidade</em>.</h2>
+<div class='clear'></div>
+</section>
+</div>
+</div>
+
+<div id='softa_catarse'>
+<div class='wrapper'>
+<div class='work_showcase' id='catarse'>
+<section>
+<div class='work_showcase_info'>
+<h3>
+<a href="http://catarse.me" target="_blank"><img alt="Catarse.me - A primeira plataforma de financiamento colaborativo de projetos criativos do Brasil" src="catarse.png" /></a>
+</h3>
+<p class='desc'>
+O Catarse é a primeira plataforma de financiamento colaborativo de projetos criativos do Brasil. Financie projetos de maneira colaborativa e torne-se parte de algo maior. Junte-se a todo mundo que quer ver um projeto sair e faça ele virar realidade. Você é a peça que falta nesta história.
+</p>
+<div class='clear'></div>
+<div class='catarse_links'>
+<h4>Veja algumas telas</h4>
+<ul class='showcase_more_images'>
+<li>
+<a href="project.jpg" rel="shadowbox[Catarse.me - A primeira plataforma de financiamento colaborativo de projetos criativos do Brasil]"><img alt="Project-thumb" src="project-thumb.jpg" /></a>
+</li>
+<li>
+<a href="profile.jpg" rel="shadowbox[Catarse.me - A primeira plataforma de financiamento colaborativo de projetos criativos do Brasil]"><img alt="Profile-thumb" src="profile-thumb.jpg" /></a>
+</li>
+<li>
+<a href="login.jpg" rel="shadowbox[Catarse.me - A primeira plataforma de financiamento colaborativo de projetos criativos do Brasil]"><img alt="Login-thumb" src="login-thumb.jpg" /></a>
+</li>
+</ul>
+</div>
+</div>
+<div class='work_showcase_image'>
+<a href="http://catarse.me"><img alt="Catarse.me - A primeira plataforma de financiamento colaborativo de projetos criativos do Brasil" src="home-small.png" title="Catarse.me - A primeira plataforma de financiamento colaborativo de projetos criativos do Brasil" />
+</a></div>
+<div class='clear'></div>
+</section>
+</div>
+</div>
+</div>
+<div class='clear'></div>
+
+<div id='softa_mailee'>
+<div class='wrapper'>
+<div class='work_showcase' id='maileeme'>
+<section>
+<div class='work_showcase_info'>
+<h3>
+<a href="http://mailee.me" target="_blank"><img alt="Mailee.me - Email marketing 2.0" src="maileeme_logo.png" /></a>
+</h3>
+<p>
+Mailee.me é um aplicativo web 2.0 para email marketing. Desenvolvido em Ruby on Rails e PostgreSQL, e focado em usabilidade, possui criador de templates, geolocalização, integração com redes sociais e inteligentes recursos anti-SPAM.
+</p>
+<div class='mailee_links'>
+<p>
+<a href="http://twitter.com/maileeme" class="twitter softa_button" target="_blank">Twitter</a> <a href="http://blog.mailee.me" class="blog softa_button" target="_blank">Blog</a> <a href="http://help.mailee.me/" class="help softa_button" target="_blank">Help</a> <a href="http://mailee.me/cadastro.html" class="mailee_call_to_action softa_button" target="_blank">Cadastre-se grátis</a>
+</p>
+<div class='clear'></div>
+<hr>
+<h4>Veja algumas telas</h4>
+<ul class='showcase_more_images'>
+<li>
+<a href="maileeme_one.jpg" rel="shadowbox[Mailee.me - Email marketing 2.0]"><img alt="Maileeme_small_one" src="maileeme_small_one.jpg" /></a>
+</li>
+<li>
+<a href="maileeme_two.jpg" rel="shadowbox[Mailee.me - Email marketing 2.0]"><img alt="Maileeme_small_two" src="maileeme_small_two.jpg" /></a>
+</li>
+<li>
+<a href="maileeme_three.jpg" rel="shadowbox[Mailee.me - Email marketing 2.0]"><img alt="Maileeme_small_three" src="maileeme_small_three.jpg" /></a>
+</li>
+</ul>
+</div>
+</div>
+<div class='work_showcase_image'>
+<img alt="Mailee.me - Email marketing 2.0" src="maileeme_showcase.png" title="Mailee.me - Email marketing 2.0" />
+</div>
+<div class='clear'></div>
+</section>
+</div>
+</div>
+</div>
+<div class='clear'></div>
+
+<div class='method_torned_paper'></div>
+<div id='softa_method'>
+<div class='wrapper'>
+<section>
+<h1>Metodologia</h1>
+<div class='method_image'>
+<img alt="Agile" height="206" src="agile.png" width="450" />
+</div>
+<div class='method_text'>
+<section>
+<h4>Métodos ágeis</h4>
+<p>Utilizar métodos ágeis significa colocar as pessoas em primeiro lugar. O sucesso de um projeto de software começa com um time qualificado e que ama o que faz. Cliente como parte da equipe, comunicação aberta e foco no resultado complementam a receita.</p><p>Acreditamos que não existem dogmas em desenvolvimento de software e que o mais importante é o aprendizado contínuo.</p>
+</section>
+</div>
+<div class='clear'></div>
+
+<br>
+<div class='method_text' id='quality_text'>
+<section>
+<h4>Qualidade</h4>
+<p>A experiência de uso determina a qualidade de um software. Por isto, dedicamos a maior parte de nossos esforços para a criação de interfaces bem projetadas e desenhadas.</p><p>Além disso, utilizamos uma série de técnicas para criar sistemas de alta qualidade. Controle de versões com git, testes automatizados, verificação da cobertura de testes, integração contínua e deployment automatizado são algumas delas.</p>
+</section>
+</div>
+<div class='method_image' id='quality_image'>
+<img alt="Quality" height="247" src="quality.gif" width="500" />
+</div>
+<div class='clear'></div>
+
+<br>
+<div class='method_image'>
+<img alt="Technology" height="200" src="technology.png" width="450" />
+</div>
+<div class='method_text'>
+<section>
+<h4>Tecnologia</h4>
+<p>Empresas de tecnologia não devem ter medo de experimentar. Estamos sempre estudando novas ferramentas e testando novas plataformas. Hoje, trabalhamos principalmente com Ruby on Rails e PostgreSQL.</p><p>Nosso cinto de utilidades conta também com linguagens como C, JavaScript (Node.js), Python, Erlang e Haskell.</p>
+</section>
+</div>
+<div class='clear'></div>
+
+</section>
+</div>
+</div>
+<div class='clear'></div>
+
+<div class='labs_header_wire'></div>
+<div id='softa_labs'>
+<div class='wrapper'>
+<section>
+<h1><img alt="Softa Labs" height="175" src="softa_labs.png" width="243" /></h1>
+<article class='labs_project'>
+<div class='project_language'><img alt="Ruby" height="24" src="ruby.png" title="Ruby" width="24" /> <img alt="Postgresql" height="24" src="postgresql.png" title="PostgreSQL" width="24" /></div>
+<div class='project_image'><a href="hstore.jpg" rel="shadowbox[Softa Labs - HStore]"><img alt="Hstore_small" height="100" src="hstore_small.jpg" width="100" /></a></div>
+<div class='project_info'>
+<h2 class='project_title'><a href="http://github.com/softa/activerecord-postgres-hstore" target="_blank">Active Record Postgres Hstore</a></h2>
+<h4 class='project_author'><a href="http://github.com/softa" target="_blank">Juan Maiz</a></h4>
+<p class='project_description'>Suporte ao campo <samp>hstore</samp> do PostgreSQL no <samp>ActiveRecord</samp>. Adeus <samp>serialize</samp>.</p>
+</div>
+<div class='clear'></div>
+<hr>
+<div class='project_actions'>
+<div class='install'>
+<code>gem install activerecord-postgres-hstore</code>
+</div>
+<div class='action view_source'><a href="http://github.com/softa/activerecord-postgres-hstore" target="_blank">ver o código fonte</a></div>
+<div class='action download'><a href="http://github.com/softa/activerecord-postgres-hstore/archives/master" target="_blank">download</a></div>
+<div class='clear'></div>
+</div>
+</article>
+
+<br>
+<article class='labs_project'>
+<div class='project_language'><img alt="Ruby" height="24" src="ruby.png" title="Ruby" width="24" /> <img alt="Git" height="24" src="git.png" title="Git" width="24" /></div>
+<div class='project_image'><a href="hercules.jpg" rel="shadowbox[Softa Labs - Hercules]"><img alt="Hercules_small" height="100" src="hercules_small.jpg" width="100" /></a></div>
+<div class='project_info'>
+<h2 class='project_title'><a href="http://github.com/diogob/hercules" target="_blank">Hercules</a></h2>
+<h4 class='project_author'><a href="http://github.com/diogob" target="_blank">Diogo Biazus</a></h4>
+<p class='project_description'>Deploy à la Heroku encontra integração contínua.</p>
+</div>
+<div class='clear'></div>
+<hr>
+<div class='project_actions'>
+<div class='install'>
+<code>gem install hercules</code>
+</div>
+<div class='action view_source'><a href="http://github.com/diogob/hercules" target="_blank">ver o código fonte</a></div>
+<div class='action download'><a href="http://github.com/diogob/hercules/archives/master" target="_blank">download</a></div>
+<div class='clear'></div>
+</div>
+</article>
+
+<div class='clear'></div>
+</section>
+</div>
+</div>
+<div class='clear'></div>
+<div class='labs_footer_wire'></div>
+
+<div id='softa_staff'>
+<div class='wrapper'>
+<section>
+<h1>
+Quem somos
+</h1>
+<div id='daniel_weinmann'>
+<div class='image'>
+<div class='picture' title='Não se preocupe: ele sempre aparece.'></div>
+</div>
+<div class='info'>
+<h4>Daniel Weinmann</h4>
+<p>Gerente do ócio criativo. Tanguero, músico, e apaixonado pelo marketing do respeito.</p>
+<p class='links'><a href="http://twitter.com/danielweinmann" target="_blank">Twitter</a></p>
+</div>
+</div>
+
+<div id='diogo_biazus'>
+<div class='image'>
+<div class='picture' title='Também gosta de alts engraçadinhos.'></div>
+</div>
+<div class='info'>
+<h4>Diogo Biazus</h4>
+<p>Arquiteto de Dados. Gosta de estruturas auto-explicativas, auto-referentes e auto-limpantes.</p>
+<p class='links'><a href="http://twitter.com/dbiazus" target="_blank">Twitter</a></p>
+</div>
+</div>
+
+<div id='felipe_cabral'>
+<div class='image'>
+<div class='picture' title='Smell like a man, Man!'></div>
+</div>
+<div class='info'>
+<h4>Felipe Cabral</h4>
+<p>Suporte incansável, aikidoka e ciclista amador. Amante de cervejas artesanais e RP nas horas vagas.</p>
+<p class='links'><a href="http://twitter.com/felipebcabral" target="_blank">Twitter</a></p>
+</div>
+</div>
+
+<div id='juan_maiz'>
+<div class='image'>
+<div class='picture' title="#TODO escrever 'alt' para próxima versão."></div>
+</div>
+<div class='info'>
+<h4>Juan Maiz</h4>
+<p>Desenvolvedor Rails, JavaScript e de outras coisas menos ortodoxas. Comemora efusivamente quando realiza entregas com zero bugs.</p>
+<p class='links'><a href="http://twitter.com/joaomilho" target="_blank">Twitter</a> · <a href="http://maiz.tumblr.com" target="_blank">Tumblr</a></p>
+</div>
+</div>
+
+<div id='pedro_axelrud'>
+<div class='image'>
+<div class='picture' title='Como assim caiu a internet!?'></div>
+</div>
+<div class='info'>
+<h4>Pedro Axelrud</h4>
+<p>Malabarista de infraestrutura, desenvolvedor Rails e o que mais precisar. Ele mora na internet e gosta de todas as novas buzzwords.</p>
+<p class='links'><a href="http://twitter.com/pedroaxl" target="_blank">Twitter</a> · <a href="http://flickr.com/photos/pedroaxl/" target="_blank">Flickr</a> · <a href="http://flavors.me/pedroaxl/" target="_blank">Flavors</a></p>
+</div>
+</div>
+
+<div class='clear'></div>
+</section>
+</div>
+</div>
+
+<div id='social'>
+<div class='wrapper'>
+<div id='twitter'>
+<section>
+<h2>twitter</h2>
+<div id='softa_twitter'></div>
+</section>
+</div>
+<div id='blog'>
+<section>
+<h2><a href="http://blog.softa.com.br/" target="_blank">blog.softa.com.br</a></h2>
+<div id='softa_blog'>
+<ul>
+<li>
+<h3 class='what'><a href="http://blog.softa.com.br/primeiro-coding-dojo-de-ruby-do-ano" class="event_link" target="_blank">Primeiro Coding Dojo de Ruby do Ano.</a></h3>
+<p> Esse post &eacute; para fazer uma retrospectiva do primeiro coding dojo de Ruby em Porto Alegre. O dojo foi organizado pelo Cabral (@felipebcabral) aq… <a href="http://blog.softa.com.br/primeiro-coding-dojo-de-ruby-do-ano" target="_blank">[leia mais]</a></p>
+</li>
+<li>
+<h3 class='what'><a href="http://blog.softa.com.br/site-novo" class="event_link" target="_blank">Site novo</a></h3>
+<p> Ol&aacute;! Hoje estamos lan&ccedil;ando nosso site novo, agora mais informativo. Queremos mostrar um pouco mais o que pensamos e que tipo de empresa … <a href="http://blog.softa.com.br/site-novo" target="_blank">[leia mais]</a></p>
+</li>
+<li>
+<h3 class='what'><a href="http://blog.softa.com.br/rails3-no-heroku" class="event_link" target="_blank">Rails3 no Heroku</a></h3>
+<p> H&aacute; algum tempo estamos colocando projetos no Heroku e estamos seriamente pensando em colocar novos projetos por l&aacute;, incluindo nosso novo… <a href="http://blog.softa.com.br/rails3-no-heroku" target="_blank">[leia mais]</a></p>
+</li>
+<li>
+<h3 class='what'><a href="http://blog.softa.com.br/configurando-a-replicacao-nativa-do-postgresq" class="event_link" target="_blank">Configurando a replicação nativa do PostgreSQL 9.0</a></h3>
+<p> Como muitos já sabem o PostgreSQL 9.0 virá com um sistema de replicação nativo e as bases replicadas poderão receber comandos de leitura (hot standby)… <a href="http://blog.softa.com.br/configurando-a-replicacao-nativa-do-postgresq" target="_blank">[leia mais]</a></p>
+</li>
+<li>
+<h3 class='what'><a href="http://blog.softa.com.br/cloud-computing-o-que-e-e-suas-desvantagens" class="event_link" target="_blank">Cloud Computing: o que é e suas desvantagens</a></h3>
+<p> Cloud Computing &eacute; uma das grandes buzzwords dos &uacute;ltimos tempos. &Eacute; vendido quase como a solu&ccedil;&atilde;o de todos os problema… <a href="http://blog.softa.com.br/cloud-computing-o-que-e-e-suas-desvantagens" target="_blank">[leia mais]</a></p>
+</li>
+<li>
+<h3 class='what'><a href="http://blog.softa.com.br/diversao-com-Algebra-relacional-e-haskell" class="event_link" target="_blank">Diversão com Álgebra Relacional e Haskell</a></h3>
+<p> Pessoal, a nova moda aqui na Softa é aprender Haskell. E tenho que confessar que a linguagem é bonita mesmo. Haskell foi mais fácil no começo do que e… <a href="http://blog.softa.com.br/diversao-com-Algebra-relacional-e-haskell" target="_blank">[leia mais]</a></p>
+</li>
+</ul>
+</div>
+</section>
+</div>
+<div id='calendar'>
+<section>
+<h2>agenda</h2>
+<div id='softa_calendar'>
+<ul>
+<li>
+<div class='when_and_event_title'>
+<time class='when' datetime='2011-05-23'>23/05 ·</time>
+<span class='event_title'>SLLConf</span>
+</div>
+<h3 class='what'>
+<a href="http://sllconfportoalegre.eventbrite.com/" class="event_link" target="_blank">Transmissão Ao Vivo da SLLConf</a>
+</h3>
+<h4 class='where'>
+<span class='with'>com</span>
+Juan Maiz
+<br>
+Porto Alegre, RS
+</h4>
+<div class='clear'></div>
+<p>
+
+</p>
+<p class='event_url'>
+<a href="http://sllconfportoalegre.eventbrite.com/" target="_blank">Inscrições</a>
+</p>
+</li>
+<li>
+<div class='when_and_event_title'>
+<time class='when' datetime='2011-05-21'>21/05 ·</time>
+<span class='event_title'>Dojo de Javascript</span>
+</div>
+<h3 class='what'>
+<a href="http://codingdojo.tw/?p=114" class="event_link" target="_blank">Dojo de Javascript na Thoughtworks</a>
+</h3>
+<h4 class='where'>
+<span class='with'>com</span>
+Diogo Biazus
+<br>
+Porto Alegre, RS
+</h4>
+<div class='clear'></div>
+<p>
+
+</p>
+<p class='event_url'>
+<a href="http://codingdojo.tw/?p=114" target="_blank">Inscrições</a>
+</p>
+</li>
+<li>
+<div class='when_and_event_title'>
+<time class='when' datetime='2011-05-04'>04/05 ·</time>
+<span class='event_title'>Dojo do GURU/RS</span>
+</div>
+<h3 class='what'>
+<a href="http://www.gururs.org/" class="event_link" target="_blank">Dojo do GURU/RS no Encontro Locaweb</a>
+</h3>
+<h4 class='where'>
+<span class='with'>com</span>
+Juan Maiz / Felipe Cabral
+<br>
+Porto Alegre, RS
+</h4>
+<div class='clear'></div>
+<p>
+
+</p>
+<p class='event_url'>
+<a href="http://www.gururs.org/" target="_blank">Agenda do evento</a>
+</p>
+</li>
+</ul>
+</div>
+<div class='separator'><img alt="Separator" height="16" src="/images/separator.png?1326740186" width="50" /></div>
+<div class='event_contact'>
+<h3>Interessado em uma palestra, curso ou evento?</h3>
+<p><a href="mailto:contato@softa.com.br" target="_blank">Entre em contato »</a></p>
+</div>
+</section>
+</div>
+<div class='clear'></div>
+</div>
+</div>
+
+<div id='rsonrails'>
+<div class='wrapper'>
+<section>
+<p>
+Nós organizamos o
+</p>
+<h2>
+<a href="http://rsrails.com.br" target="_blank"><img alt="RS on Rails" height="51" src="/images/rsonrails.png?1326740186" title="RS on Rails" width="225" /></a>
+</h2>
+<p>
+Evento realizado no sul do Brasil, apresentando <em>palestras técnicas</em>, <em>cases</em> e <em>lightning talks</em>, e voltado para programadores e entusiastas em desenvolvimento de aplicações usando o framework <em>Ruby on Rails</em>.
+</p>
+</section>
+</div>
+</div>
+
+</div>
+<div class='clear'></div>
+<footer><div class='wrapper'>
+<div id='softa_contact'>
+<h1>Entre em contato</h1>
+<div id='contact_us_success' style='display:none'>
+<h3>Mensagem enviada com sucesso!</h3>
+<p>Obrigado. Em breve retornaremos seu contato.</p>
+<p class='send_another'><a href="#">Enviar outra mensagem.</a></p>
+</div>
+<div id='contact_us_failure' style='display:none'>
+<h3>Ooops. Ocorreu um erro ao enviar a mensagem.</h3>
+<p>Tente novamente ou, se preferir, envie um email para contato@softa.com.br.</p>
+<p class='send_another'><a href="#">Tentar novamente.</a></p>
+</div>
+<form action='/contact' id='contact_us' method='post' name='contact_form'>
+<div id='contact_us_content'>
+<input name="authenticity_token" type="hidden" value="TjIIybjOFvp5IJBRqpsvJvgyKjiunp+LQIWAdqxmgXQ=" />
+<fieldset>
+<label for='contact_us_name'>Nome</label>
+<br>
+<input id='contact_us_name' name='name' placeholder='Seu nome completo' type='text'>
+<div id='contact_us_name_required'>Você precisa preencher seu nome para poder enviar.</div>
+</fieldset>
+<fieldset>
+<label for='contact_us_email'>Email</label>
+<br>
+<input id='contact_us_email' name='email' placeholder='usuario@dominio.com' type='email'>
+<div id='contact_us_email_required'>Você precisa preencher seu email para poder enviar.</div>
+<div id='contact_us_email_invalid'>Formato de email inválido. Tente novamente.</div>
+</fieldset>
+<fieldset>
+<label for='contact_us_message'>Mensagem</label>
+<br>
+<textarea id='contact_us_message' name='message' placeholder='Escreva sua mensagem' rows='4' wrap='soft'></textarea>
+<div id='contact_us_message_required'>Você precisa escrever uma mensagem para poder enviar.</div>
+</fieldset>
+<fieldset class='submit_button'>
+<button data-send='Enviar' data-wait='Aguarde...' form='contact_form' id='send_button' type='submit'>Enviar</button>
+</fieldset>
+</div>
+</form>
+</div>
+<div class='clear'></div>
+</div>
+</footer>
+<div class='post_footer'>
+<div id='colophon'>
+<p>2012 ·<img alt="Colophon" height="32" src="/images/colophon.png?1326740186" width="84" />· 7 anos</p>
+</div>
+</div>
+<script src="/javascripts/softa.js?1326740186" type="text/javascript"></script>
+<script>
+  //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18681353-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+</script>
+
+</body>
+</html>
