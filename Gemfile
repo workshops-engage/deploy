@@ -19,3 +19,5 @@ gem 'heroku'
 
 gem 'execjs'
 gem 'therubyracer'
+
+gem 'resque'
