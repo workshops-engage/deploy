@@ -20,4 +20,5 @@ gem 'heroku'
 gem 'execjs'
 gem 'therubyracer'
 
+# add resque
 gem 'resque'
