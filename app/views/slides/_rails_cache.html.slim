@@ -1,0 +1,199 @@
+.step.slide.shell#cache[data-x=x_succ data-y=0]
+  q[style="text-align:center"]
+    h1 Cache
+
+.step.slide#rails_page_cache[data-x=x_succ data-y=0]
+  q
+    h1 Rails Page Cache
+
+    br
+    br
+    br
+    br
+    br
+    small
+      = link_to 'guides.rubyonrails.org/caching_with_rails.html', 'http://guides.rubyonrails.org/caching_with_rails.html'
+
+.step.slide#rails_page_cache1[data-x=x_succ data-y=0]
+  q
+    small[style="font-size: 0.6em;"]
+      pre
+        code[class="ruby"]
+          |
+            class ProductsController < ActionController
+              caches_page :index
+              def index
+                @products = Products.all
+              end
+            end    
+
+.step.slide#rails_page_cache2[data-x=x_succ data-y=0]
+    small
+      pre
+        code[class="ruby"]
+          |
+            class ProductsController < ActionController
+              caches_page :index
+              def index
+                @products = Products.all
+              end
+              def create
+                expire_page :action => :index
+              end
+            end  
+
+.step.slide#rails_action_cache[data-x=x_succ data-y=0]
+  q
+    h1 Rails Action Cache
+.step.slide#rails_action_cache2[data-x=x_succ data-y=0]
+    small
+      pre
+        code[class="ruby"]
+          |  
+            class ProductsController < ActionController
+ 
+              before_filter :authenticate
+              caches_action :index
+             
+              def index
+                @products = Product.all
+              end
+             
+              def create
+                expire_action :action => :index
+              end
+             
+            end
+
+.step.slide#rails_sweeper_cache[data-x=x_succ data-y=0]
+  q
+    h1 Sweepers
+    br
+    br
+    br
+    br
+    br
+    small
+      = link_to 'wannabesoftwareengineer.blogspot.com.br/2010/03/rails-cache-expiration-with-sweepers.html', 'http://wannabesoftwareengineer.blogspot.com.br/2010/03/rails-cache-expiration-with-sweepers.html'
+
+.step.slide#rails_cache_sweeper[data-x=x_succ data-y=0]
+    h1 app/models/cache/system_messages_sweeper.rb
+    small
+      pre
+        code[class="rails"]
+          | class SystemMessagesSweeper < ActionController::Caching::Sweeper
+              observe SystemMessage
+
+              def after_create(record)
+                expire_system_message_cache(record)
+              end
+
+              def after_destroy(record)
+                expire_system_message_cache(record)
+              end
+
+              private
+              def expire_system_message_cache(record)
+                Rails.cache.delete("systen_message_count") 
+              end
+            end
+
+.step.slide#rails_fragment_cache[data-x=x_succ data-y=0]
+  q
+    h1 Fragment Cache
+.step.slide#rails_fragment_cache2[data-x=x_succ data-y=0]
+    small
+      pre
+        code[class="erb"]
+          |
+            <% Order.find_recent.each do |o| %>
+              <%= o.buyer.name %> bought <%= o.product.name %>
+            <% end %>
+             
+            <% cache do %>
+              All available products:
+              <% Product.all.each do |p| %>
+                <%= link_to p.name, product_url(p) %>
+              <% end %>
+            <% end %>
+            
+.step.slide#rails_cache_store_config[data-x=x_succ data-y=0]
+  q
+    | config/application.rb
+    small[style="font-size: 0.5em;"]
+      pre
+        code[class="ruby"]
+          |cache_store = :memory_store, :size => 64.megabytes
+          br
+          |cache_store = :file_store, "/path/to/cache/directory"
+          br
+          |cache_store = :mem_cache_store, "cache-1.example.com"
+          br
+          |cache_store = :ehcache_store
+
+.step.slide#rails_memoize[data-x=x_succ data-y=0]
+  q
+    h1 Memoize
+    br
+    br
+    br
+    br
+    br
+    small
+      = link_to 'railway.at/articles/2008/09/20/a-guide-to-memoization/', 'http://www.railway.at/articles/2008/09/20/a-guide-to-memoization/'
+
+.step.slide#rails_memoize2[data-x=x_succ data-y=0]
+    small
+      pre
+        code[class="ruby"]
+          |class User < ActiveRecord::Base
+            has_many :available_accounts, :class_name => 'Account', 
+              :conditions => "budget > 0"
+
+            def total_budget
+              self.available_accounts.inject(0) { |sum, a| sum += a.budget }
+            end
+          end
+      br
+      pre
+        code[class="erb"]
+          |<% if current_user.total_budget > 0 %>
+             <%= current_user.total_budget %>
+           <% end %>
+
+.step.slide#rails_memoize3[data-x=x_succ data-y=0]
+    small
+      pre
+        code[class="ruby"]
+          |class User < ActiveRecord::Base
+            has_many :available_accounts, :class_name => 'Account', 
+              :conditions => "budget > 0"
+
+            def total_budget
+              @total_budget ||= self.available_accounts.inject(0) { 
+                |sum, a| sum += a.budget 
+              }
+            end
+          end
+
+.step.slide#rails_memoize4[data-x=x_succ data-y=0]
+    small
+      pre
+        code[class="ruby"]
+          |class User < ActiveRecord::Base
+              extend ActiveSupport::Memoizable
+
+              has_many :available_accounts, :class_name => 'Account', 
+                :conditions => "budget > 0"
+
+              def total_budget
+                self.available_accounts.inject(0) { |sum, a| sum += a.budget }
+              end
+
+              def total_spent(start_date, end_date)
+                self.available_accounts.where(
+                  'created_at >= ? and created_at <= ?', start_date, end_date
+                  ).inject(0) {|sum, a| sum += a.spent }
+              end
+              memoize :total_budget, :total_spent
+            end

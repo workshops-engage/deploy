@@ -1,0 +1,18 @@
+
+
+.step.slide.shell#memcached[data-x=x_succ data-y=0]
+  q[style="text-align:center"]
+    h1 Memcached
+
+.step.slide#cached_model[data-x=x_succ data-y=0]
+  q
+    i gem install cached_model
+    small[style="font-size: 0.5em;"]
+      pre
+        code[class="ruby"]
+          | >> Foo.find 1
+            => MemCache Get (0.134546)  active_record:Foo:1
+            => SELECT * FROM foos WHERE (foos.id = 1) LIMIT 1
+            => MemCache Set (0.024758)  active_record:Foo:1
+            >> Foo.find 1
+            => MemCache Get (0.032337)  active_record:Foo:1
